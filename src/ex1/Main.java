@@ -10,6 +10,8 @@ de 13 anos em diante 2 kilos de carne.*/
 public class Main {
     public static void main(String[] args) {
 
+        // exercício da lista número 1
+
         Pessoa pessoa1 = new Pessoa("João", 8, false);
         Pessoa pessoa2 = new Pessoa("Maria", 25, true);
         Pessoa pessoa3 = new Pessoa("Pedro", 15, false);

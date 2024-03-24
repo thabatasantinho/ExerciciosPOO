@@ -4,6 +4,8 @@ public class Main {
         Porta porta1 = new Porta();
         Porta porta2 = new Porta();
 
+        // Exercício da lista número 8
+
         // Abrindo e fechando a porta1 algumas vezes
         porta1.abrir();
         porta1.fechar();
