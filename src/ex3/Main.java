@@ -1,15 +1,33 @@
 package ex3;
-/*ex 4 na lista: Implemente a classe Cliente que possua os atributos nome,
-saldo, e limite. Esta deve possuir tamb´em os m´etodos sacar(), depositar(),
-checarSaldo(), e obterNome(). Sabe-se que s´o ´e poss´ıvel sacar se o saldo+limite
-forem superiores `a quantia. Os m´etodos sacar() e depositar() necessitam de
-parˆametros. O m´etodo checarSaldo deve retornar o valor saldo+limite. O
-m´etodo obterNome() deve retornar o nome do Cliente. */
 public class Main {
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("João", 1000, 500);
-        cliente.depositar(200);
-        cliente.sacar(700);
-        System.out.println(STR."Saldo disponível para \{cliente.obterNome()}: R$\{cliente.checarSaldo()}");
+        Porta porta1 = new Porta();
+        Porta porta2 = new Porta();
+
+        // Exercício da lista número 8
+
+        // Abrindo e fechando a porta1 algumas vezes
+        porta1.abrir();
+        porta1.fechar();
+        porta1.abrir();
+        porta1.fechar();
+
+        // Abrindo a porta2 algumas vezes
+        porta2.abrir();
+        porta2.abrir();
+
+        // Verificando o status das portas
+        System.out.println("A porta1 está aberta? " + porta1.estaAberta());
+        System.out.println("A porta2 está aberta? " + porta2.estaAberta());
+
+        // Obtendo o número total de aberturas
+        System.out.println("Número total de aberturas: " + Porta.getNumAberturas());
+
+        // Reiniciando o contador de aberturas
+        Porta.reiniciarContadorAberturas();
+        System.out.println("Contador de aberturas reiniciado.");
+
+        // Verificando o número total de aberturas após reiniciar
+        System.out.println("Número total de aberturas após reiniciar: " + Porta.getNumAberturas());
     }
 }
