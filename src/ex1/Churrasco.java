@@ -1,3 +1,5 @@
+package ex1;
+
 class Churrasco {
     double qtdCarne;
 
